@@ -1,0 +1,29 @@
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+export const REGISTER_LOADING = "REGISTER_LOADING";
+export const FINISH_LOADING = "FINISH_LOADING";
+export const UPDATE_STATE = "UPDATE_STATE";
+//
+export const UPDATE_TASK_STATUS = "UPDATE_TASK_STATUS";
+export const UPDATE_TASK = "UPDATE_TASK";
+export const DELETE_TASK = "DELETE_TASK";
+export const ADD_TASK = "ADD_TASK";
+export const GET_TASK = "GET_TASK";
+export const SET_TASKS_USER = "SET_TASKS_USER";
+export const SET_CURRENT_TASK = "SET_CURRENT_TASK";
+export const SUCCESS_DELETE_TASK = "SUCCESS_DELETE_TASK";
+export const ERROR_DELETE_TASK = "ERROR_DELETE_TASK";
+export const SUCCESS_UPDATE_TASK = "SUCCESS_UPDATE_TASK";
+export const MOVE_TASK_TO_TERMINATE = "MOVE_TASK_TO_TERMINATE";
+export const MOVE_TASK_TO_WORKING = "MOVE_TASK_TO_WORKING";
+export const START_TASK = "START_TASK";
+export const FINISH_TASK = "FINISH_TASK";
+export const START_UPDATE_TASK = "START_UPDATE_TASK";
+export const END_UPDATE_TASK = "END_UPDATE_TASK";
+//
+export const LOADING = "LOADING";
+//
+export const SET_ALL_USERS = "SET_ALL_USERS";

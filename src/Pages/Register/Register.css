@@ -1,0 +1,320 @@
+.register-page-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.149), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.884)),
+    url("./../../Assets/background_image_third.jpg"); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.register-page-left {
+    position: relative;
+    min-width: 700px;
+    background-color: rgba(10, 10, 10, 0.271);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.register-page-left .formulaire-register {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-page-left-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.register-page-left-header_top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.register-page-left-header_top img {
+    width: 100px;
+}
+
+.register-page-left-header_top span {
+    position: relative;
+    font-size: 29px;
+    font-weight: bold;  
+    text-transform: uppercase; 
+}
+
+.register-page-left-header_medium {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-page-left-header_medium div:first-child{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.register-page-left-header_medium div:first-child img {
+    position: relative;
+    width: 35px;
+}
+
+.register-page-left-header_medium div:first-child span{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Anton";
+}
+
+.register-page-left-header_medium > h3{
+    font-family: "Caveat";
+    font-size: 18px;
+    padding-left: 50px;
+}
+
+.register-page-left-header_medium > h3 > span {
+    color: rgb(16, 194, 194);
+}
+
+.inputs-register-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputs-register-container .input-container {
+    position: relative;
+    min-width: 48%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputs-register-container .input-container span {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    padding-left:8px;
+    text-transform: uppercase;
+}
+
+.inputs-register-container .input-container input {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #04e0c3;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    font-size: 14px;
+    padding: 20px 0px 20px 20px;
+}
+
+.inputs-register-container .input-container input::placeholder{
+    color: rgb(185, 185, 185);
+}
+
+.w-full{
+    width: 100%;
+}
+
+.custom-button-register {
+    position: relative;
+    margin-top: 1rem;
+    left: 50%;
+    align-items: center;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    min-width: 200px;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #008372;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.register-page-left a {
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.register-page-right {
+    position: relative;
+    width: 100%;
+}
+
+.list-images{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.list-images img {
+    position: relative;
+    width: 50px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.pop-up-content-body.pop-up-content-body-register {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    align-items: column !important;
+    text-align: center;
+    width: 100%;
+}
+  
+.pop-up-content-body .icon-success {
+    position: relative;
+    width: 100%;
+}
+
+.pop-up-content-body .icon-success img {
+    position: relative;
+    width: 60px;
+}
+
+.pop-up-content-body .message {
+    padding: 10px;
+    background-color: rgb(3, 141, 45);
+    border-radius:10px;
+    font-family: "Raleway";
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.pop-up-content-body-register .button-pop-up {
+    position: relative;
+    padding: 15px;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    background-color: black;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pop-up-content-body-register .button-pop-up i {
+    font-size: 11px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.pop-up-content-body-register .button-pop-up span {
+    font-size: 10px;
+    font-family: "Raleway";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* ***************** */
+
+.register-page-error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999999;
+    background-color: rgba(24, 24, 24, 0.174);
+}
+
+.list-errors {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.error-message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    font-family: "Nunito";
+    text-transform: uppercase;
+}
+
+.error-message::after{
+    content: "";
+    background-color: #b0b0b014;
+    height: 2px;
+    width: 100%;
+}

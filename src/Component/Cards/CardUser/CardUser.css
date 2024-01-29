@@ -1,0 +1,59 @@
+.pop-up-list-user .card-user {
+    position: relative;
+    width: 140px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pop-up-list-user .card-user  .image-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pop-up-list-user .card-user  .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pop-up-list-user .card-user .info-user {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 4px;
+    font-family: "Nunito";
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.pop-up-list-user .card-user .info-user img {
+    width: 10px;
+    height: 10px;
+}
+
+.card-user .info-user.email {
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}

@@ -1,0 +1,6 @@
+export {default as TaskSideBare} from "./SideBare/SideBare.jsx"
+export {default as SideBare} from "./SideBare/SideBare.jsx"
+export {default as InputField} from "./InputContainer/InputField.jsx"
+export {default as InputFieldRegister} from "./InputContainer/InputFieldRegister.jsx"
+export {default as CardTask} from "./Cards/CardTask.jsx"
+export {default as CardUser} from "./Cards/CardUser/CardUser.jsx"

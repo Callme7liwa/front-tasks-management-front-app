@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Dancing+Script:wght@400;500;700&display=swap');
+
+
+.login-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.149), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.884)),
+    url("./../../Assets/background_image_third.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.login-content {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.content_first {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.content_first .ball-content{
+    position: relative;
+    width: 120px;
+    height: 100px;
+}
+.content_second {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    width: 100%;
+}
+.content_second .content_second_left {
+    position: relative;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 4rem - 1rem - 100px);
+}
+
+.content_second_left .line {
+    position: relative;
+    width: 3px;
+    height: 30%;
+    border-radius: 15px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #000000 0%, #1b1a1c 20%, #0496ff 100%);
+}
+
+.content_second_left img {
+    padding: 10px;
+    width: 30px;
+}
+
+.content_second_right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content_second_right .content_title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    color: white;
+}
+
+.content_second_right .content_title span:first-child{
+    font-size: 43px;
+    font-weight: 800;
+    font-family: "Caveat";
+}
+
+.content_second_right .content_title span:last-child{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Raleway";
+    letter-spacing: 0.5px;
+    color: #acacac;
+    text-transform: uppercase;
+}
+
+.content_second_right .formulaire-login {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 220, 0.277);
+    border-radius: 15px;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formulaire-login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.line-login-form {
+    position: relative;
+    margin-top: 5px;
+    width: 60%;
+    height: 2px;
+    background-image: linear-gradient(to right, #00000031 ,#00000069,#0496ff ,#0000006d, #1b1a1c30);
+}
+
+.formulaire-login img {
+    width: 70px;
+}
+
+.formulaire-login .login-title {
+    position: relative;
+    color: white;
+    padding: 2px;
+    font-family: "Caveat";
+    text-transform: uppercase;
+}
+
+.formulaire-login .inputs-container {
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.formulaire-login .input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.input-container  input {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    color: black;
+    font-family: "Nunito";
+    border-radius: 10px;
+    background-color: rgba(244, 244, 244, 0.33);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-container  input::placeholder{
+    color: rgba(0, 0, 0, 0.584);
+}
+
+.button-submit {
+    position: relative;
+    text-align: center;
+    background-color:#00a9a9;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-transform: uppercase;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.register_here {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.page_body_second {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.page_body_second  .avatar-login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.formulaire-errors {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}

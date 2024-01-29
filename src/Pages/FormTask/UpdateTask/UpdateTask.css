@@ -1,0 +1,25 @@
+.list-pop-up-buttons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-pop-up-buttons > div {
+    position: relative;
+    display: flex;
+    gap:5px;
+}
+
+.pop-up-submit-button.start{
+    background-color: rgb(0, 102, 255);
+}
+
+.pop-up-submit-button.terminate{
+    background-color: orangered;
+}
+
+.pop-up-submit-button.delete {
+    background-color: red;
+}

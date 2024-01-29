@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+.welcome-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+.welcome-page_left {
+    position: fixed;
+    height: 100%;
+    background-color: rgba(215, 215, 215, 0.14);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-page_left .welcome-page-left_header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px ;
+    padding-top: 10px;
+    height:  10vh;
+}
+
+.line{
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.067);
+}
+
+.welcome-page_left .welcome-page-left_header div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.welcome-page_left .welcome-page-left_header span {
+    color: black;
+    font-weight: bold;
+    font-family: "Anton";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.welcome-page-left_header img {
+    width: 30px;
+}
+
+.welcome-page_left .welcome-page-left_header i {
+    color: white;
+    padding: 6px;
+    font-size: 13px;
+    background: rgb(2,0,36);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-infinite {
+    animation: rotate360 infinite 2s linear; /* Vous pouvez ajuster la durée et le timing de l'animation selon vos préférences */
+}
+
+.welcome-page_left .welcome-page-left_body {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-page-left_body .page-right_title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 10px;
+    padding-inline: 10px;
+}
+
+.welcome-page-left_body .page-right_title span {
+    position: relative;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.welcome-page-left_body .page-right_title img {
+    width: 20px;
+    height: 20px;
+}
+
+.welcome-page-left_body .page-left_tasks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-inline:10px ;
+    margin-top: 2rem;
+}
+
+.page-left_tasks .page-left-task-container {
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 0.2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: black;
+}
+
+.page-left_tasks .page-left-task-container.current-container{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.current-container .task-status{
+    color: white !important ;
+}
+
+.current-container .task-number {
+    background-color: white !important;
+    color: black !important;
+}
+
+.page-left-task-container .task-ball {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.page-left-task-container  .task-status {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.page-left-task-container  span:last-child{
+    position: absolute;
+    right: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.list-images-logos {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+.list-images-logos img {
+    width: 40px;
+}
+
+.welcome-page_right {
+    position: absolute;
+    width: calc(100% - 290px);
+    left: 250px;
+    padding-inline:20px;
+}
+
+.welcome-page_right .page-right_header {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.page-right_header  .header-avatar-container {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 10px;
+    background-color: rgba(215, 215, 215, 0.14); 
+    border-radius: 20px;  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    border: 1px solid rgba(0, 0, 0, 0.133);
+}
+
+.header-avatar-container .image-avatar-container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.header-avatar-container .image-avatar-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-avatar-container span {
+    color: black;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "Play";
+}
+
+.dot {
+    position: relative;
+    border-radius: 50%;
+}
+
+.dot-green {
+    background-color: greenyellow;
+}
+
+.w-5 {
+    width: 6px;
+}
+
+.h-5 {
+    height: 6px;
+}
+
+.header-avatar-container i {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+
+.page-right-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.page-right-body div:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-right-body div:first-child img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.page-right-body div:first-child h3 {
+    color: black;
+    font-family: "Raleway";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.page-right-body div:first-child h3 span {
+    color:#00a9a9;
+}
+
+.page-right-body .welcome-body-add-task {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-body-add-task .add-task-container {
+    position: relative;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: rgba(215, 215, 215, 0.14); 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    border : 1px solid rgba(65, 65, 195, 0.296);
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.welcome-body-add-task .add-task-container i {
+    color: white;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-body-add-task .add-task-container span {
+    color: black;
+    font-family: "Raleway";
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
+
+.list-tasks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.list-tasks .task-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.list-tasks .task-container .task-number {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-tasks .task-container .task-number span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #047979;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: "Anton";
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    font-size: 11px;
+}
+
+.list-tasks .task-container .task-number img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.list-tasks .task-container .task-name {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.list-tasks .task-container:hover{
+    z-index: 999;
+}
+
+.list-tasks .task-container .task-name span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: black;
+    font-size: 11px;
+    font-family: "Raleway";
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.list-tasks .task-container .task-name span::after{
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.task-container > img {
+    position: absolute;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.current-container {
+    background-color: blue;
+}
+
+/* *********** POPUP ********** */
+.pop-up-profile .image-avatar-container {
+    position: relative;
+    width: 100px ;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pop-up-profile .image-avatar-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
